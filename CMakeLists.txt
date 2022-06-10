@@ -1,9 +1,7 @@
-cmake_minimum_required(VERSION 3.4)
-
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/formatter_lib)
-add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/formatter_ex_lib)
-add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/hello_world_application)
-add_subdirectory( ${CMAKE_CURRENT_SOURCE_DIR}/solver_application)
+cmake_minimum_required(VERSION 3.12)
+project(main)
+set(CMAKE_CXX_STANDART 17)
+add_subdirectory(formatter_lib)
+add_subdirectory(formatter_ex_lib)
+add_subdirectory(solver_lib)
+add_subdirectory(solver_application)
